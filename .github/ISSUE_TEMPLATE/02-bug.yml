@@ -51,6 +51,15 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: app_version
+    attributes:
+      label: App Version
+      description: The version of the app where you saw the bug, e.g. 1.1.4 for FreightClaims. Leave empty if unknown.
+      placeholder: e.g. 1.1.4
+    validations:
+      required: false
+
   - type: textarea
     id: environment
     attributes:
@@ -58,7 +67,6 @@ body:
       placeholder: |
         - OS: macOS/Windows/Linux
         - Browser: Chrome/Safari/Firefox (if relevant)
-        - Version/commit:
 
   - type: textarea
     id: logs
